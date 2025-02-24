@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--nazwa/tytuł strony-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <!--favicon - ikona strony internetowej, widoczna
+na pasku adresu przeglądarki i na kracie otwartej strony www.-->
+    <!--unikalny kod osadzania zestawu-->
+    <script
+      src="http://kit.fontawesome.com/35baee5629.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--link do fontawesome: https://fontawesome.com/ -->
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/Logo.png"
+            class="logo"
+          /><!--miejsce na autorskie logo-->
+          <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Profolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <!--ikonę pobrać z
+https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i
+          ><!--ikonę pobrać z
+https://fontawesome.com/icons/categories (ten obszar dotyczy urządzeń mobilnych)-->
+          <div class="toggle-btn" id="btn">
+            <span id="btnText">Light</span>
+            <img src="images/sun.png" id="btnIcon" />
+          </div>
+        </nav>
+        <div class="header-text">
+          <h1 class="slide-left">
+            Hello,
+            <p>My name is <span>Kamila Żołądek</span>.</p>
+          </h1>
+          <!--miejsce na
+przedstawienie swojej osoby-->
+          <p class="slide-left">Below you can find some details about me</p>
+          <!--krótki opis
+czego dotyczy strona-->
+        </div>
+      </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              id="aboutImage"
+              src="images/KAMA1.png"
+            /><!--miejsce na zdjęcie biznesowe-->
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              During my studies and work experience, I have learned to quickly
+              process numerical data and adapt to changing situations. My years
+              of involvement in volleyball—as a player, referee, and member of
+              the DZPS Games and Discipline Committee (2021–2024)—have helped me
+              develop strong teamwork skills. When working on projects, I focus
+              on presenting data clearly and effectively using storytelling and
+              visualizations. I also enjoy traveling and discovering new places.
+            </p>
+            <!--klika słów
+o sobie-->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Technical Skills</span><br /></li>
+                <h5>
+                  Data Analysis: Basic knowledge of Tableau, Knime, and
+                  programming languages R and Python.
+                </h5>
+                <h5>
+                  MS Office: Intermediate proficiency in Excel, Word, Power BI,
+                  and writing SQL queries for Access tables.
+                </h5>
+                <h5>
+                  Geographic Information Systems (GIS): Intermediate knowledge
+                  of QGIS and ArcGIS.
+                </h5>
+                <h5>
+                  Data Visualization: Ability to create clear reports and
+                  dashboards to support decision-making.
+                </h5>
+
+                <li><span>Soft Skills</span><br /></li>
+                <h5>
+                  Problem-Solving & Analytical Thinking: Logical approach to
+                  solving problems and drawing conclusions from data.
+                </h5>
+                <h5>
+                  Teamwork: Effective collaboration with others to achieve
+                  common goals.
+                </h5>
+                <h5>
+                  Working Under Pressure: Ability to complete tasks efficiently
+                  while maintaining quality and meeting deadlines.
+                </h5>
+                <h5>
+                  Communication: Strong interpersonal skills and the ability to
+                  explain complex topics clearly and accessibly.
+                </h5>
+                <h5>
+                  Flexibility: Quick adaptation to changing requirements and
+                  work environments.
+                </h5>
+                <h5>English Language: Communicative proficiency (B2 level).</h5>
+
+                <!--opis
+umiejętności-->
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>12.2023 - Present</span> <br />Delivery Control Tower
+                  Trainer <b>AmRest Sp. z o.o.</b><br />
+                </li>
+                <h5>
+                  - Training new employees in the Delivery Control Tower
+                  department.
+                </h5>
+                <h5>
+                  - Creating training materials and conducting training
+                  sessions.
+                </h5>
+                <h5>
+                  - Monitoring the progress of new employees and providing
+                  feedback.
+                </h5>
+                <h5>
+                  - Analyzing the effectiveness of training and proposing
+                  improvements.
+                </h5>
+
+                <!--doświadczenie zawodowe-->
+                <li>
+                  <span>2020 July - 2020 September</span><br />Office Assistant
+                  - <b>Bailiffship</b> <br />
+                </li>
+                <h5>- Managing post and preparing document drafts</h5>
+
+                <!--doświadczenie zawodowe-->
+                <li>
+                  <span>2020 July - 2020 September</span><br />Customer service
+                  specialist <b>CCIG GROUP SP.Z.O.O.</b><br />
+                </li>
+                <h5>
+                  - Customer care (telephone support of Media Expert and Grecos
+                  Holidays customers)
+                </h5>
+                <h5>
+                  - Training new staff Registration and order process control
+                </h5>
+                <h5>- Manipulation of dat</h5>
+                <!--doświadczenie zawodowe-->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>10.2019 - 09.2024</span><br />Wrocław University of
+                  Environmental and life sciences
+                  <br />
+                  Spatial economy<br />
+                  <b>Specialization in Socio-Economic Analysis</b>
+                </li>
+                <!--
+edukacja i ukończone kursy-->
+
+                <li>
+                  <span>10.2024 - Present</span><br />Wrocław University of
+                  Economic and businnes
+                  <br />
+                  Postgraduate Studies<br />
+                  <b>Business Analyst in IT & Business</b>
+                </li>
+                <!--edukacja i ukończone
+kursy-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Knime.jpg" /><!--zdjęcie związane z
+zainteresowaniami-->
+            <div class="layer">
+              <h3>Knime</h3>
+              <!--wykonane projekty, które można połączyć z dyskiem Google
+lub odwołanie do strony, na której realizowano jakiś kurs-->
+              <a href="https:..." target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/tableau.jpg"
+            /><!--zdjęcie związane z zainteresowaniami-->
+            <div class="layer">
+              <h3>Tableau</h3>
+              <!--wykonane projekty, które można połączyć z dyskiem Google
+lub odwołanie do strony, na której realizowano jakiś kurs-->
+              <a href="https:..." target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/Rstudio.jpg"
+            /><!--zdjęcie związane z zainteresowaniami-->
+            <div class="layer">
+              <h3>R studio</h3>
+              <!--wykonane projekty, które można połączyć z dyskiem
+Google lub odwołanie do strony, na której realizowano jakiś kurs-->
+              <a href="https:..." target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--<a href="#" class="btn">BACK</a>-->
+      </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"
+                ><!--ikonę pobrać z
+https://fontawesome.com/icons/categories--></i
+              ><a href="mailto:kamilazoladek@wp.pl" target="_blank"
+                >kamilazoladek@wp.pl</a
+              >
+            </p>
+            <!--adres e-mail-->
+            <p>
+              <i class="fa-sharp fa-solid fa-square-phone"
+                ><!--ikonę pobrać z
+https://fontawesome.com/icons/categories--></i
+              >+48 505 189 594
+            </p>
+            <!--numer telefonu-->
+            <p>
+              <i class="fa-brands fa-linkedin"></i
+              ><!--ikonę pobrać z
+https://fontawesome.com/icons/categories--><a
+                href="https://www.linkedin.com/in/kamila-%C5%BCo%C5%82%C4%85dek-823657250/"
+                target="_blank"
+                >linkedin.com
+              </a>
+            </p>
+            <!--link do linkedin-->
+            <a href="images/Kamila CV-ENG.pdf" download class="btn btn2"
+              >Download CV - ENG</a
+            >
+            <a href="images/Kamila CV-PL.pdf" download class="btn btn2">
+              Download CV - PL
+            </a>
+          </div>
+          <div class="contact-right">
+            <form id="contact-form">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright by Kamila Żołądek</p>
+      </div>
+    </div>
+    <!--skrypt dotyczący ABOUT-->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <!--skrypt dla urządzeń mobilnych-->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <!--skrypt do zmany koloru strony-->
+    <script>
+      let btn = document.getElementById("btn");
+      let btnText = document.getElementById("btnText");
+      let btnIcon = document.getElementById("btnIcon");
+      btn.onclick = function () {
+        document.body.classList.toggle("light-theme");
+        if (document.body.classList.contains("light-theme")) {
+          btnIcon.src = "images/moon.png";
+          btnText.innerHTML = "Dark";
+        } else {
+          btnIcon.src = "images/sun.png";
+          btnText.innerHTML = "Light";
+        }
+      };
+    </script>
+  </body>
+</html>
