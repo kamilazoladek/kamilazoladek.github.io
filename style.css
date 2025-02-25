@@ -292,7 +292,7 @@ nav ul li a:hover::after {
 .work-list1 {
     display: grid;
     flex-wrap: wrap-reverse;
-    width: 25%;
+    width: 20%;
     grid-gap: 20px;
 }
 
