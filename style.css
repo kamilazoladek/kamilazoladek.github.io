@@ -289,6 +289,30 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 
+.work-list1 {
+    display: grid;
+    flex-wrap: wrap-reverse;
+    width: 25%;
+    grid-gap: 20px;
+}
+
+.work1 {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work1 img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work1:hover img {
+    transform: scale(1.1);
+}
+
 .work {
     border-radius: 10px;
     position: relative;
@@ -458,16 +482,17 @@ form.btn2 {
 
 .copyright {
     width: 100%;
+    background: #000000;
+    padding: 10px 0;
     text-align: center;
     font-size: 10px;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
     color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
-.copyright a {
+.copyright p {
     color: #fff;
     text-decoration: none;
 }
@@ -477,6 +502,7 @@ form.btn2 {
 nav .fa-solid {
     display: none;
 }
+
 
 @media only screen and (max-width: 600px) {
     #header {
