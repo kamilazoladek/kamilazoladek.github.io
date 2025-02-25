@@ -395,7 +395,7 @@ nav ul li a:hover::after {
 /*
     --contact--*/
 #contact {
-    margin-top: 80px;
+    margin: 80px;
     ;
 }
 
